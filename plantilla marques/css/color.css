@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+
+.hora {
+    background-color: #c8c4c4;   
+}
+
+.espacio {
+    background-color: #908e8e;   
+}
+
+.ASO {
+    background-color: #9d96a3;   
+}
+
+.marcas {
+    background-color: #e2ffbb;   
+}
+.HLLD {
+    background-color: #9dbfed;   
+}
+.BBDD {
+    background-color: #f7f7c6;   
+}
+
+.ISO {
+    background-color: #6aa1ea;   
+}
+.FM {
+    background-color: #c6f7d2;   
+}
+
+.Tutoria {
+    background-color: #f7c6c6;   
+}
+
+.SX {
+    background-color: #f7dbc6;   
+}
