@@ -3,8 +3,9 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    font-weight: 100;
 }
 
 body.grid-container {
@@ -12,7 +13,7 @@ body.grid-container {
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr 2fr 2fr;
+    grid-template-rows: 1fr 3fr 1fr 2fr 2fr;
 }
 
 nav {
@@ -25,9 +26,16 @@ nav {
     padding-right: 2vh;
 }
 
+
+#nav-icon{
+    display: none;
+
+}
+
 .logo-nav {
     height: auto;
     width: 4vh;
+    margin-left: 4vh;
 
 }
 
@@ -50,12 +58,18 @@ nav {
 .adittions a {
     text-decoration: none;
     color: grey;
+
 }
+
+a:hover {
+    color: rgb(235, 102, 35) ;
+}
+
 
 .banner-container {
     grid-column: 1 / -1;
+    grid-row: 2;
     width: 100%;
-    height: 50vh; /* Damos una altura fija para que la capa absoluta funcione bien */
     position: relative;
     overflow: hidden;
     display: flex;
@@ -114,7 +128,7 @@ nav {
     grid-row: 4;
     display: flex;
     justify-content: center;
-    gap: 1vh;
+    gap: 5vh;
     
 }
 
@@ -197,6 +211,73 @@ footer #join {
 footer #copy {
     margin-top: 2vh;
     justify-self: center;
+}
+
+
+@media screen and (max-width:767px){
+    
+    body.grid-container {
+        min-height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr 1fr 6fr 2fr;
+
+    }
+    nav {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+
+    nav .menu {
+        margin-right: 6vh;
+        position: relative;
+
+    }
+
+
+/* COMO ESCONDER LOS NAVS  */
+
+
+
+
+    .banner-container{
+        grid-column: 1/-1;
+        grid-row: 2;
+    }
+
+    .adittions{
+        display: none;
+    }
+
+
+    #text-card {
+        grid-column: 1/-1;
+        grid-row: 3;
+    }
+
+    .container-cards {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/-1;
+        grid-row: 4;
+        gap: 4vh;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; 
+        /* centrar de manera vertical */
+    }
+
+    .container-cards .card {
+        align-items: center;        
+    }
+
+
+    footer {
+        grid-column: 1/-1;
+        grid-row: 5;
+    }
+
 }
 
 
