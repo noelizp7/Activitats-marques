@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body.grid-container {
+    min-height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 2fr 2fr;
+}
+
+nav {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1vh;
+    padding-right: 2vh;
+}
+
+.logo-nav {
+    height: auto;
+    width: 4vh;
+
+}
+
+.logo-nav img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.adittions {
+    display: flex;
+    gap: 3vh;
+    align-items: center;
+}
+
+#meet {
+    color: rgb(20, 20, 20);
+}
+
+.adittions a {
+    text-decoration: none;
+    color: grey;
+}
+
+.banner-container {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 50vh; /* Damos una altura fija para que la capa absoluta funcione bien */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-container-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner-container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.banner-text button {
+    margin: 4vh;
+    padding: 2vh;
+    width:15vh;
+    height: auto;
+    background-color: rgb(235, 102, 35);
+    border-radius: 2px;
+    border: none;
+    color: white;
+}
+
+
+
+/* Contenedor de las cartas de imagen+text en */
+
+#text-card {
+    grid-column: 1/-1;
+    grid-row: 3;
+    margin-top: 6vh;
+    margin-bottom: 4;
+    justify-self: center;
+}
+.container-cards {
+    grid-column:1/-1;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    gap: 1vh;
+    
+}
+
+.card {
+    justify-items: center;
+    height: auto;
+    width: 30vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.container-img {
+    height: 20vw;
+    width: auto;
+    position: relative;
+
+}
+
+.container-img img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.card p{
+    margin-top: 2vh;
+
+}
+
+footer {
+    grid-column: 2;
+    grid-row: 5;
+
+}
+
+hr {
+    grid-column: 1/-1;
+    grid-row: 5;
+    margin-top: 3vh;
+    width: 70%;
+    height: 1px;
+    justify-self: center;
+    border: none; 
+    background-color: rgb(181, 180, 180);
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    justify-content: center;
+    margin-top: 2vh;
+ 
+
+}
+.twitter-icon {
+    border: 1px  solid rgb(177, 175, 173);
+    border-radius: 100%;
+    height: 5vh;
+    width: 5vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 1vh;
+}
+
+.twitter-icon img {
+    height: 70%;
+    width: 70%;
+}
+
+
+footer #join {
+    justify-self: center;
+    margin-top: 4vh;
+}
+
+footer #copy {
+    margin-top: 2vh;
+    justify-self: center;
+}
+
+
